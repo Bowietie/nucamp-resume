@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Bowietie/nucamp-resume#readme",
   "dependencies": {
     "bootstrap": "^5.1.0",
+    "glyphicons": "^0.2.0",
     "jquery": "^3.6.0",
     "popper.js": "^1.16.1"
   }

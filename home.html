@@ -17,8 +17,8 @@
     </head>
     <body>
 
-        <nav class="navbar navbar-expand-sm sticky-top">
-            <a class="navbar-brand" href="#">Build A Resume</a>
+        <nav class="navbar navbar-expand-sm sticky-top navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand " href="#">Build A Resume</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#resumeNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -28,7 +28,7 @@
                         <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="navbar-nav mr-auto">
-                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="resumeBuilder.html">About Us</a>
                     </li>
 
                 </ul>
@@ -36,28 +36,127 @@
             </div>
 
         </nav>
-        <div class="row row-content">
-            <form>
-                <div class="form-group col-sm-6">
-                    <label for="userName">Name</label>
-                    <input type="text" class="form-control" id="userName" placeholder="Name">
-                </div>
-                <div class="form-group col-sm-6">
-                    <label for="userPhoneNumber">Phone Number</label>
-                    <input type="text" class="form-control" id="userPhoneNumber" placeholder="Phone Number">
-                </div>
-                <div class="form-group col-sm-6">
-                    <label for="userEmail">Email</label>
-                    <input type="email" class="form-control" id="userEmail">
-                </div>
-            </form>
+        <div class="container mt-4">
+            <div class="row row-content">
+                <h2 >Your resume Builder</h2>
+                <p>Enter your information below and subimt to see a resume built</p>
+            </div>
         </div>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-sm-5">
+                    <form id="resume-form" action="">
+                        <div class="form-group mt-1">
+                            <label for="userName">Name</label>
+                            <input type="text" class="form-control" id="userName" placeholder="Name">
+                        </div>
+                        <div class="form-group mt-1">
+                            <label for="userPhoneNumber">Phone Number</label>
+                            <input type="text" class="form-control" id="userPhoneNumber" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group mt-1">
+                            <label for="user-job-title">Prefered Job Title</label>
+                            <input type="text" class="form-control" id="user-job-title" placeholder="title">
+                        </div>
+                        <div class="form-group mt-1">
+                            <label for="userEmail">Email</label>
+                            <input type="email" class="form-control" id="userEmail">
+                        </div>
+                        <div class="form-groups mt-1">
+                            <label for="userWebsite">Website</label>
+                            <input type="text" class="form-control" id="user-website">
+
+                        </div>
+                        <div class="form-group mt-1">
+                            <label for="user-summary">Summary</label>
+                            <textarea class="form-control" id="user-summary" rows="5" placeholder="A summary of yourself"></textarea>
+                        </div>
+                        <div class="form-group mt-1">
+                            <label for="user-education">Education</label>
+                            <textarea class="form-control" id="user-education" rows="5" placeholder="Your education experience"></textarea>
+                        </div>
+                        <div class="form-group mt-1">
+                            <label for="user-education-2">Education Cont. (Optional)</label>
+                            <textarea class="form-control" id="user-education-2" rows="5" placeholder="Your education experience Cont."></textarea>
+                        </div>
+                        <div class="form-group mt-1">
+                            <label for="work-experience">Work Experience</label>
+                            <textarea class="form-control" id="work-experience" rows="5" placeholder="Your work experience"></textarea>
+                        </div>
+                        <div class="form-group mt-1">
+                            <label for="work-experience-2">Work Experience Cont.</label>
+                            <textarea class="form-control" id="work-experience-2" rows="5" placeholder="Your work experience"></textarea>
+                        </div>
+                        <div class="form-group mt-4 mb-4">
+                            <input type="submit" id="form-submit" placeholder="">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-sm-7">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <h1 id="html-name">Will Bowe</h1>
+                            <h5 id="html-job-title">Freelance Web Developer</h5>
+                            <p class="border-top pt-3" id="html-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio lacus, sollicitudin in dolor at, consequat volutpat ante. Integer quis consequat turpis, quis porta orci. Proin tincidunt volutpat faucibus. Suspendisse ac nisl purus suspendisse eleifend interdum orci non pharetra. </p>
+                          </div>       
+
+                    </div>
+                    <div class="nav">
+                        <div class="nav-item text-md-left">
+                            <a href="#" class=" ml-2 nav-link" id="html-email">lcollins@email.com</a>
+                         </div>
+                         <div class="nav-item text-md-center pb-2 pb-md-0">
+                            <a href="#" class=" ml-2 nav-link" id="html-website">www.lauracollins.com</a>
+                          </div>       
+                          <div class="nav-item text-md-right">
+                            <a href="#" class=" ml-2 nav-link" id="html-phone-number">+12 3456 7890</a>
+                          </div>       
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md mb-5">
+                            <h2 class="mb-5">Work Experience</h2>
+                            <ul>
+                              <li>
+                                <h6 class="text-primary" id="html-work-experience">Senior Web Developer / Digital Agency 2016-2020</h6>
+                              </li>
+                              <li>
+                                <h6 class="text-primary" id="html-work-experience-2">Web Developer / Big Firm 2010-2015</h6>
+                              </li>
+
+                            </ul>
+                        </div>
+                        <div class="col-md mb-5">
+                            <h2 class="mb-5">Education</h2> 
+                            <ul>
+                              <li>
+                                <h6 class="text-primary" id="html-edu">Computer Science / University Name 2001-2004</h6>
+                              </li>
+                              <li>
+                                <h6 class="text-primary" id="html-edu-2">Testville High School 1994-2000</h6>
+                              </li>
+                            </ul>
+                        </div>   
+
+                      </div>    
+
+                </div>
+
+            </div>
+        </div>
+        <footer class="footer">
+
+
+        </footer>
+        
         
 
         <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
 
     </body>
 </html>
